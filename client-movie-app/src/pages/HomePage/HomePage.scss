@@ -1,0 +1,17 @@
+.search-container{
+    width: 55%;
+    margin: 0 auto;
+}
+.movie-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+    gap: 20px;
+}
+@media all and (max-width: 648px) {
+    .search-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
