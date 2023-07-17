@@ -8,7 +8,9 @@ Movie Application with it's Dashboard for adding Movies Details,Genres, and upda
 - Framer Motion
 - Cloudinary
 - Hot-Toast
-  
+- Material UI
+- SCSS
+
 **BackEnd**
 - Node.js
 - Express.js
