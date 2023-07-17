@@ -1,4 +1,4 @@
-const getAllMovies = async (req, res, next) => {
+const allMovies = async (req, res, next) => {
     try {
     } catch (error) {
         res.status(400).json({
@@ -10,8 +10,7 @@ const getAllMovies = async (req, res, next) => {
 const searchMovie = () =>{
 
 }
-
-const addwatchLater = () =>{
+const addWatchLater = () =>{
 
 }
 
@@ -19,9 +18,17 @@ const removeWatchLater = () =>{
 
 }
 
+const watchLater = () =>{
+
+}
+
+
+
 module.exports = {
-    getAllImages,
+    allMovies,
     searchMovie,
-    addwatchLater,
-    removeWatchLater
+    addWatchLater,
+    removeWatchLater,
+    watchLater
 };
+

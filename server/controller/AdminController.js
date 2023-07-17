@@ -1,4 +1,4 @@
-const AddMovie = async (req, res) => {
+const addMovie = async (req, res) => {
     try {
         return res.status(200).json({message:"Image Uploaded Successfully"});
     } catch (error) {
@@ -7,3 +7,15 @@ const AddMovie = async (req, res) => {
         });
     }
 };
+const updateMovie = () =>{
+
+}
+
+const deleteMovie = () =>{
+
+}
+module.exports = {
+    addMovie,
+    updateMovie,
+    deleteMovie
+}
