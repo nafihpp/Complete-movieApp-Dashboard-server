@@ -1,17 +1,18 @@
 const express = require("express");
 const app = express();
-const {logger} = require("node-logger-middleware");
 const { connectDb } = require("./config/dbConfig");
 require("dotenv").config();
 
 const PORT = process.env.PORT;
-app.use(logger);
 connectDb();
 
 //routes
-app.use("/api", Auth);
+app.use("/api/auth", AuthRoute);
+app.use("/api/admin", adminRoute);
+app.use("/api/movies", movieRoute);
+app.use("/api/genres", genreRoute);
 
-app.use("*", (req, res) => {
+app.use("*", (res) => {
     res.status(404).json({
         message: "Route does not exist",
     });

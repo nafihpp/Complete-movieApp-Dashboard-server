@@ -1,10 +1,10 @@
-const login = () =>{
+const login = (req,res) =>{
 
 }
-const signup = () =>{
+const signup = (req,res) =>{
 
 }
-const forgotPassword = () =>{
+const forgotPassword = (req,res) =>{
 
 }
 

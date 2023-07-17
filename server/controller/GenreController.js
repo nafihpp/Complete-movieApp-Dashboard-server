@@ -1,17 +1,21 @@
+const getAllGenre = () =>{
+
+}
 const addGenre = () =>{
 
 }
 
-const removeGenre = () =>{
+const deleteGenre = () =>{
 
 }
 
-const editGenre = () =>{
+const updateGenre = () =>{
 
 }
 
 module.exports ={
     addGenre,
-    editGenre,
-    removeGenre,
+    updateGenre,
+    deleteGenre,
+    getAllGenre,
 }

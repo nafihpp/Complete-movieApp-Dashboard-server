@@ -1,16 +1,8 @@
 const express = require("express");
-const {
-    getAllImages,
-    uploadImage,
-} = require("../controller/GalleryController");
-const { upload } = require("../middlewares/multer");
-const { auth } = require("../middlewares/auth");
-
-
 const router = express.Router();
 
-router.post("/upload", auth, upload.single("gallery_image"), uploadImage);
-router.get("/getall",  getAllImages);
-
+router.post("/add-movie", checkAdmin, addMovie);
+router.put("/update-movie", checkAdmin, updateMovie);
+router.delete("/delete-movie", checkAdmin, deleteMovie);
 
 module.exports = router;
